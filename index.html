@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding:0px;
+            margin:0px;
+        }
+        #section1{
+            width:100%;
+            height:100vh;
+            background-image: url("./img1.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            
+        }
+        nav{
+            width:100%;
+            height:8%;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items:center;
+            position: relative;
+        }
+        nav>li{
+            font-size: 1.5rem;
+            list-style-type: none;
+            margin:30px;
+        }
+        .nav_image{
+            width:25px;
+        }
+        #text{
+            width:45%;
+            height:40vh;
+            background-color: rgba(230, 79, 79, 0.4);
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            left:5%;
+            top:20%;
+        }
+        h1{
+            font-size: 3rem;
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            padding-top: 6%;
+            padding-left: 6%;
+        }
+        #main_text{
+            font-size:1.3rem;
+            font-family: Arial, Helvetica, sans-serif;
+            color:rgba(255, 255, 255,0.9);
+            padding-top: 2%;
+            padding-left: 6%;
+            padding-right: 20%;
+           
+        }
+        #foot{
+            width:100%;
+            height:10vh;
+            background-image: linear-gradient(90deg,rgb(236, 59, 212),rgb(226, 211, 93));
+            position:absolute;
+            bottom: 0px;
+        }
+
+
+
+
+
+
+
+
+        #section2{
+            width:100%;
+            height:100vh;
+            background-image: linear-gradient(90deg,rgb(236, 59, 212),rgb(226, 211, 93));
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+        }
+        h3{
+            font-size: 3rem;
+            color:white;
+            font-family: Arial, Helvetica, sans-serif;
+            letter-spacing: 5%;
+        }
+        #container{
+            width:100%;
+            display: flex;
+            justify-content: space-around;
+        }
+       
+        #container>div{
+            width:30%;
+            height:50vh;
+            background-color: white;
+            border-radius: 0 20% 0 20%;
+        }
+        .food_items{
+            width:90%;
+            height:60%;
+            padding:5%;
+            border-radius: 0 25% 0 0;
+        }
+        .text_area{
+            align-items: center;
+            
+        }
+        .item_name{
+            font-size: 1.5rem;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+            padding-left: 35%;
+          
+        }
+        .item_text{
+            color:black;
+            padding:8%;
+            text-align: justify;
+        }
+
+        #order{
+            width:10%;
+            height:8vh;
+            border: 0px;
+            outline: none;
+            border-radius: 30px;
+            font-size: 1rem;
+            font-weight: bold;
+            background-color: rgba(255, 255, 255,0.5);
+        }
+       
+        
+    </style>
+</head>
+<body>
+    <section id="section1">
+        <nav>
+            <li>Home</li>
+            <li>Order</li>
+            <li>Food</li>
+            <li>Restaurant</li>
+            <li>Testimonial</li>
+            <li>Contact us</li>
+            <li><img src="./mobile1.png" class="nav_image"  id="nav_img1" alt="mobile image"></li>
+            <li><img src="./cart.png"  class="nav_image" id="nav_img2" alt="shopping cart image"></li>
+        </nav>
+
+        <div id="text">
+            <h1>LOREM IPSUM</h1>
+            <P id="main_text">Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took
+                a galley of type and scrambled it to make a type
+                specimen book.
+            </P>
+        </div>
+        <div id="foot">
+
+        </div>
+    </section>
+    <hr>
+    <section id="section2">
+        <header>
+            <h3>Order Now</h3>
+        </header>
+        <div id="container">
+            <div class="card" style="width: 18rem;">
+                <img src="./img4.jpg" class="food_items" alt="...">
+                <div class="text_area">
+                  <h5 class="item_name">BURGER</h5>
+                  <p class="item_text">Lorem Ipsum has been the
+                    industry's standard dummy text</p>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="./img2.jpg" class="food_items" alt="...">
+                <div class="text_area">
+                  <h5 class="item_name">PIZZA</h5>
+                  <p  class="item_text">Lorem Ipsum has been the
+                    industry's standard dummy text</p>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="./img3.jpg" class="food_items" alt="...">
+                <div class="text_area">
+                  <h5 class="item_name">PASTA</h5>
+                  <p class="item_text">Lorem Ipsum has been the
+                    industry's standard dummy text</p>
+                </div>
+            </div>
+        </div>
+        <input type="button" value="Order" id="order">   
+    </section>
+</body>
+</html>
